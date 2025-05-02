@@ -21,7 +21,7 @@ pip (Python package installer)
 Flask (Web framework for the UI)
 Hugging Face Transformers (For large language model access)
 FAISS (For similarity search over FAQs)
-SentenceTransformers (For embedding FAQs)
+SentenceTransformers (For embedding FAQsgit commit -m "Initial commit")
 
 Setup Instructions
 1. Clone the repository
@@ -142,24 +142,10 @@ Solution: Check if the FAQ dataset is up-to-date and contains relevant entries. 
 
 Project Structure
 
-WHO-Medical-RAG-Chatbot/
-├── app.py                # Flask app for running the web interface
-├── chatbot.py            # Core chatbot functionality
-├── requirements.txt      # List of dependencies
-├── data/
-│   ├── faq_data.csv      # FAQ dataset
-│   ├── faq_embeddings/   # Preprocessed FAQ embeddings
-├── templates/
-│   ├── index.html        # Web interface HTML template
-├── static/               # Static files (CSS, JS, images)
-├── utils/                # Utility functions for handling queries, embeddings, etc.
-└── README.md             # This documentation
-
-
 
 MEDICAL_RAG/
 ├── data/
-│   └── medical_faqs.json   # JSON data file
+│   └── medical_faqs.json   # FAQ dataset file
 ├── templates/
 │   └── index.html          # Web interface HTML template
 ├── venv/                   # Virtual environment folder
@@ -168,4 +154,4 @@ MEDICAL_RAG/
 │   ├── share/              # Shared files
 │   └── pyvenv.cfg          # Virtual environment configuration
 ├── chatbot.py              # Core chatbot functionality
-└── README.md               # Documentation
+└── README.md               # User Documentation  Manual
