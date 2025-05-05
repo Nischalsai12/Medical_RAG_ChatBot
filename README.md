@@ -69,22 +69,21 @@ A Retrieval-Augmented Generation (RAG) chatbot for healthcare and medical knowle
 
 ## Project Structure
 ```
+
 healthcare-medical-rag-chatbot/
-├── data
-│ ├──medical_faqs.json # Medical datasets (CSV, JSON)
-| ├── docs/ # Project documentation (reports, guides)
-├──templates
-│ ├──index.html
-├──venv
-│ ├──include
-│ ├──lib
-│ ├──Scripts
-│ ├──share
-│ ├──pyvenv.cfg
-├──.gitignore
-├──chatbot.py # # Data loading, cleaning, Embedding generation, FAISS retrieval,LLM loading, prompt generation, Evaluation, metrics, memory utils
-├──README.md # User documentation manual
-├── requirements.txt # Python dependencies
+├── data/                             # Datasets and reference documents
+│   ├── medical_faqs.json            # Core medical FAQs used for retrieval
+│   ├── docs/                        # Project documentation, reports, and guides
+├── templates/                       # HTML templates for Flask frontend
+│   ├── index.html                   # Main web interface template
+├── venv/                            # Python virtual environment (ignored by Git)
+│   ├── ...                          # (Generated locally, not versioned)
+├── .gitattributes                   # Git LFS and attribute configuration
+├── .gitignore                       # Files/directories ignored by Git
+├── chatbot.py                       # Core RAG pipeline: data prep, embeddings, retrieval, LLM response, evaluation
+├── README.md                        # User documentation and setup instructions
+├── requirements.txt                 # List of Python package dependencies
+
 ```
 
 
